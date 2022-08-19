@@ -5,6 +5,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_catalog/screens/home_screen.dart';
+import 'package:flutter_application_catalog/screens/login_screen.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -14,6 +15,18 @@ class MyApp extends StatelessWidget {
   int days = 30;
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomeScreen());
+    return MaterialApp(
+      // home: HomeScreen(),
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(primarySwatch: Colors.red),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => LoginScreen(),
+        "/home": (context) => HomeScreen(),
+        "/dashboard": (context) => HomeScreen(),
+        "/login": (context) => LoginScreen(),
+      },
+    );
   }
 }
