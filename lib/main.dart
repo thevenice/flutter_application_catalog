@@ -4,7 +4,7 @@
 //create our app func/widget
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_catalog/home_page.dart';
+import 'package:flutter_application_catalog/screens/home_screen.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -14,6 +14,6 @@ class MyApp extends StatelessWidget {
   int days = 30;
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomePage());
+    return MaterialApp(home: HomeScreen());
   }
 }
