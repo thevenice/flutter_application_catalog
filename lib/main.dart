@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_catalog/screens/home_screen.dart';
 import 'package:flutter_application_catalog/screens/login_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -19,8 +20,11 @@ class MyApp extends StatelessWidget {
       // home: HomeScreen(),
       themeMode: ThemeMode.light,
       darkTheme: ThemeData(brightness: Brightness.dark),
-      theme: ThemeData(primarySwatch: Colors.red),
-      initialRoute: "/home",
+      theme: ThemeData(
+          primarySwatch: Colors.red,
+          fontFamily: GoogleFonts.lato().fontFamily,
+          primaryTextTheme: GoogleFonts.latoTextTheme()),
+      initialRoute: "/login",
       routes: {
         "/": (context) => LoginScreen(),
         "/home": (context) => HomeScreen(),
