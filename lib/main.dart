@@ -14,7 +14,6 @@ void main(List<String> args) {
 }
 
 class MyApp extends StatelessWidget {
-  int days = 30;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

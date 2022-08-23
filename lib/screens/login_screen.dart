@@ -11,14 +11,15 @@ class LoginScreen extends StatelessWidget {
             child: Column(
       children: [
         Image.asset(
-          "assets/images/login_1.png",
-          fit: BoxFit.cover,
+          "assets/images/daga.png",
+          fit: BoxFit.contain,
+          height: 100,
         ),
         SizedBox(
           height: 20.0,
         ),
         Text(
-          "Login",
+          "Employee Login",
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
         ),
         SizedBox(
